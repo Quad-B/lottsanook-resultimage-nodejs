@@ -42,7 +42,7 @@ http.createServer(function (req, res) {
 
             var options = {
                 'method': 'GET',
-                'url': 'https://main-lottsan-xmutu31582svy3ko-gtw.qovery.io/?date=' + datecheck,
+                'url': 'https://main-lottsan-oe6mjbtqkbt6l5as-gtw.qovery.io/?date=' + datecheck,
                 'json': true,
                 'headers': {
                 }
