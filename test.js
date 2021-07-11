@@ -55,7 +55,7 @@ http.createServer(function (req, res) {
 
             var options = {
                 'method': 'GET',
-                'url': 'https://main-lottsan-oe6mjbtqkbt6l5as-gtw.qovery.io/?date=' + datecheck,
+                'url': 'https://lottsanook.vercel.app/api/?date=' + datecheck,
                 'json': true,
                 'headers': {
                 }
