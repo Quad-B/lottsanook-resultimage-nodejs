@@ -22,7 +22,7 @@ http.createServer(function (req, res) {
         fs.createReadStream('fbbg.jpg').pipe(res);
     } else if (req.url == '/fbrmbg') {
         res.writeHead(200, { 'content-type': 'image/png' });
-        fs.createReadStream('fb_rmbg_sb.png').pipe(res);
+        fs.createReadStream('fbrmbg.png').pipe(res);
     } else if (req.url == '/fbrmbn') {
         res.writeHead(200, { 'content-type': 'image/png' });
         fs.createReadStream('fbrmbn.png').pipe(res);
