@@ -13,7 +13,11 @@ function padLeadingZeros(num, size) {
 }
 
 http.createServer(function (req, res) {
-    if (req.url == '/fbbg') {
+    if (req.url == '/ctc'){
+        res.writeHead(200, {'Content-Type': 'text/plain'});
+        res.write('ok');
+        res.end();
+    } else if (req.url == '/fbbg') {
         res.writeHead(200, { 'content-type': 'image/jpg' });
         fs.createReadStream('fbbg.jpg').pipe(res);
     } else if (req.url == '/fbrmbg') {
