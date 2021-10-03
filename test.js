@@ -4,8 +4,6 @@ var fs = require('fs');
 const request = require('request');
 const url = require('url');
 
-process.env.PORT = 4000;
-
 require('dotenv').config();
 
 function padLeadingZeros(num, size) {
