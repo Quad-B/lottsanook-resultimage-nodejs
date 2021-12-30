@@ -68,7 +68,7 @@ http.createServer(function (req, res) {
 
             var options = {
                 'method': 'GET',
-                'url': 'https://lottsanook.vercel.app/api/?date=' + datecheck,
+                'url': 'https://lottsanook-nodejs-production.up.railway.app/?date=' + datecheck,
                 'json': true,
                 'headers': {
                 }
