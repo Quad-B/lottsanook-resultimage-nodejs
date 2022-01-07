@@ -179,11 +179,11 @@ http.createServer(function (req, res) {
                             .run();
 
                         res.writeHead(200, { 'content-type': 'image/png' });
-                        fs.createReadStream(datecheck.substring(0, 2) + '-' + datecheck.substring(2, 4) + '-' + datecheck.substring(4, 8) + '.png').pipe(res);
+                        fs.createReadStream(datecheck.substring(0, 2) + '-' + datecheck.substring(2, 4) + '-' + datecheck.substring(4, 8) + '_'+bgurl+'.png').pipe(res);
                         console.log('Finished generating screenshots!');
                     } else {
                         res.writeHead(200, { 'content-type': 'image/png' });
-                        fs.createReadStream(datecheck.substring(0, 2) + '-' + datecheck.substring(2, 4) + '-' + datecheck.substring(4, 8) + '.png').pipe(res);
+                        fs.createReadStream(datecheck.substring(0, 2) + '-' + datecheck.substring(2, 4) + '-' + datecheck.substring(4, 8) + '_'+bgurl+'.png').pipe(res);
                         console.log('Finished loading screenshots!');
                     }
                 }
